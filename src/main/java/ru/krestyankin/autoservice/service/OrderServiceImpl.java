@@ -4,7 +4,6 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
 import ru.krestyankin.autoservice.models.Order;
-import ru.krestyankin.autoservice.models.OrderItem;
 import ru.krestyankin.autoservice.models.SparePart;
 
 import java.math.BigDecimal;

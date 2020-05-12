@@ -12,7 +12,8 @@ public class SparePart extends OrderItem {
     public String toString() {
         return "SparePart{" +
                 "partNumber='" + partNumber + "', " +
-                "price=" + price +
+                "price=" + price +", " +
+                "status=" + status +
                 '}';
     }
 }

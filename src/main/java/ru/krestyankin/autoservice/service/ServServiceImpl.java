@@ -16,7 +16,12 @@ public class ServServiceImpl implements ServService {
     public void book(Serv serv) throws Exception {
         logger.info("Бронирование ресурса "+ serv.getName());
         Thread.sleep(100 + RandomUtils.nextInt(0, 100));
+        if(RandomUtils.nextInt(0, 3)==0) {
+            logger.error("Ошибка бронирования ресурса "+ serv.getName());
+            throw new RuntimeException("Not found");
+        }
         serv.setPrice(BigDecimal.valueOf(5 + RandomUtils.nextInt(1, 10)));
         logger.info("Бронирование ресурса "+ serv.getName()+" завершено");
     }
+
 }

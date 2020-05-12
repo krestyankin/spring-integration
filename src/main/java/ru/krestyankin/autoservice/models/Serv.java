@@ -5,7 +5,8 @@ public class Serv extends OrderItem {
     public String toString() {
         return "Serv{" +
                 "name=" + name + ", " +
-                "price=" + price +
+                "price=" + price +", " +
+                "status=" + status +
                 '}';
     }
 }

@@ -12,9 +12,11 @@ public class OrderItem {
     protected String name;
     protected BigDecimal price;
     protected BigDecimal qty;
+    protected String status;
 
     public OrderItem() {
         qty=BigDecimal.ONE;
         price=BigDecimal.ZERO;
+        status="OK";
     }
 }
