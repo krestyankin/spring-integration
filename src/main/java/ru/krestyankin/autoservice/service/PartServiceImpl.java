@@ -17,7 +17,7 @@ public class PartServiceImpl implements PartService {
         logger.info("Заказ запчасти "+part.getPartNumber());
         Thread.sleep(100 + RandomUtils.nextInt(0, 100));
         if(RandomUtils.nextInt(0, 3)==0) {
-            logger.error("Ощибка заказа запчати "+part.getPartNumber());
+            logger.error("Ошибка заказа запчати "+part.getPartNumber());
             throw new RuntimeException("Not found");
         }
         part.setPrice(BigDecimal.valueOf(10+ RandomUtils.nextInt(10, 20)));
